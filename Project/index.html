@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทบทวนการเรียนการสอนคณิตศาสตร์</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== พื้นหลัง ===== -->
+<div class="background">
+    <span class="shape circle"></span>
+    <span class="shape square"></span>
+    <span class="shape circle small"></span>
+    <span class="shape square small"></span>
+
+    <span class="decor-character char-1">🧑‍🎓</span>
+    <span class="decor-character char-2">🎈</span>
+    <span class="decor-character char-3">🧑‍🏫</span>
+    <span class="decor-character char-4">❤️</span>
+    <span class="decor-character char-6">⭐</span>
+
+    <span class="glow glow-1"></span>
+    <span class="glow glow-2"></span>
+</div>
+
+<!-- ===== เนื้อหา ===== -->
+<div class="container">
+
+    <div class="mascot">
+        <div class="mascot-icon">🧑‍🎓📐</div>
+    </div>
+
+    <h1>✨ ทบทวนการเรียนการสอนคณิตศาสตร์ ✨</h1>
+    <p class="subtitle">คลิปวิดีโอน่ารู้</p>
+
+    <!-- ===== เมนู ===== -->
+    <div class="menu">
+
+        <!-- เปลี่ยนจาก button เป็น a (เสถียรกว่า) -->
+        <a href="video1.html" class="card">
+            <span class="icon">📐</span>
+            <div class="text">
+                <h3>ห.ร.ม. และ ค.ร.น</h3>
+            </div>
+        </a>
+
+        <a href="video2.html" class="card">
+            <span class="icon">➕</span>
+            <div class="text">
+                <h3>ทศนิยม</h3>
+            </div>
+        </a>
+
+        <a href="video3.html" class="card">
+            <span class="icon">🔺</span>
+            <div class="text">
+                <h3>การบวก ลบ คูณ หารระคนของเศษส่วนและจำนวนคละ</h3>
+            </div>
+        </a>
+
+        <a href="video4.html" class="card">
+            <span class="icon">🔷</span>
+            <div class="text">
+                <h3>เศษส่วนและการบวกการลบเศษส่วนและจำนวนคละ</h3>
+            </div>
+        </a>
+
+        <a href="video5.html" class="card">
+            <span class="icon">🔵</span>
+            <div class="text">
+                <h3>อัตราส่วนและร้อยละ</h3>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- ปุ่มกลับ -->
+    <button class="back-btn" onclick="window.location.href='intro.html'">
+        ⬅ กลับหน้าแรก
+    </button>
+
+    
+</div>
+
+<!-- ===== JavaScript ===== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const scrollUp = document.getElementById("scrollUp");
+    const scrollDown = document.getElementById("scrollDown");
+
+    if (scrollUp) {
+        scrollUp.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    }
+
+    if (scrollDown) {
+        scrollDown.onclick = () => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        };
+    }
+
+});
+</script>
+
+</body>
+</html>
